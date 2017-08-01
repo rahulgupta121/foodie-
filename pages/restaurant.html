@@ -1,0 +1,66 @@
+<div class="restaurant" ng-if="restaurant.name" ng-controller="restaurantController">
+    <div class="rest-wrapper">
+        <div class="image">
+            <img ng-src="{{restaurant.image}}" height="100" width="100">
+        </div>
+        <div class="rest-info">
+            <div class="rest-category">
+               <small>{{restaurant.category}} </small>
+            </div>
+            <div class="rest-name">
+            <strong>{{restaurant.name}}</strong>
+            </div>
+            <div>
+               <strong> {{restaurant.location}}</strong>
+            </div>
+            <div class="rest-address">
+                {{restaurant.address}}
+            </div>
+        </div>
+    </div>
+   <div class="rest-extra">
+       <div class="type">
+           <div><small>Cuisines:</small></div>
+           <div><small>Cost for Two: </small></div>
+           <div><small>Hours:</small></div>
+           <div ng-if="restaurant.bestDish"><small>Recommended: </small></div>
+       </div>
+       <div class="value">
+           <div>{{restaurant.cuisines}}</div>
+           <div>₹{{restaurant.cost | number}}</div>
+           <div>{{restaurant.hours}}</div>
+           <div class="bestDish" ng-if="restaurant.bestDish">
+            <span>{{restaurant.bestDish.name}} </span>
+            <div ng-click="flag=!flag" class="button">Show Image</div>
+            <div ng-show="flag">
+              <ul class="list-buttons">
+                <li style="padding : 10px 0; display:inline-block;"><div ng-click="getIngredients(restaurant.bestDish.image)" class="button">Get Ingredients</div></li>
+              <li style="padding : 10px 0; display:inline-block;"><div ng-click="checkVegorNonVeg()" class="button">Get Veg or nv</div></li>
+              </ul>
+              <img ng-src="{{restaurant.bestDish.image}}" style="margin-top: 30px;width:300px; height:200px;">
+           </div>
+        </div>
+       </div>
+   </div>
+    <div class="rating">
+        <strong>{{restaurant.vote}}</strong>
+    </div>
+    <div ng-if="ingredients">
+        <ol>
+          <li ng-repeat="ingredient in ingredients">
+            {{ingredient}}
+          </li>
+        </ol>
+     <!--    <ol>
+          <li ng-repeat="j in probabilityvalue">
+          {{j}}
+          </li>
+          
+        </ol> -->
+    </div>
+
+    
+
+
+</div>
+

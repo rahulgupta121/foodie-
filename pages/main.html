@@ -1,0 +1,61 @@
+<div class="main" ng-controller="mainController">
+
+
+
+            <div class="ui container-fluid">
+
+
+
+                        <div class="hero">
+                            <img ng-src="zomato_logo.svg" class="zo_logo">
+                            <p>Find the best restaurants, cafés, and bars in Delhi</p>
+                            <div class="search-bar">
+                                <form>
+                                <div class="input-wrapper">
+                                  <input type="text" class="form-control" placeholder="Search..." ng-model="query">
+                                </div>
+                                <button type="submit" class="btn btn-default red">Search</button>
+                              </form>
+                            </div>
+
+                        </div>
+
+                        <div ng-repeat="restaurant in restaurants | filter:query" class="restaurant">
+                            <div class="rest-wrapper">
+                                <div class="image">
+                                    <img ng-src="{{restaurant.image}}" height="100" width="100">
+                                </div>
+                                <div class="rest-info">
+                                    <div class="rest-category">
+                                       <small>{{restaurant.category}} </small>
+                                    </div>
+                                    <div class="rest-name">
+                                    <a ng-href="#!/restaurant/{{restaurant.id}}"><strong>{{restaurant.name}}</strong></a>
+                                    </div>
+                                    <div>
+                                       <strong> {{restaurant.location}}</strong>
+                                    </div>
+                                    <div class="rest-address">
+                                        {{restaurant.address}}
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="rest-extra">
+                                <div class="type">
+                                    <div><small>Cuisines:</small></div>
+                                    <div><small>Cost for Two: </small></div>
+                                    <div><small>Hours:</small></div>
+                                </div>
+                                <div class="value">
+                                    <div>{{restaurant.cuisines}}</div>
+                                    <div>₹{{restaurant.cost | number}}</div>
+                                    <div>{{restaurant.hours}}</div>
+                                </div>
+                            </div>
+                            <div class="rating">
+                                <strong>{{restaurant.vote}}</strong>
+                            </div>
+                    </div>
+
+        </div>
+    </div>

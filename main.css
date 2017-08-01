@@ -1,0 +1,225 @@
+*,
+*:after,
+*:before {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(243, 243, 243);
+    font-family: "Segoe UI",sans-serif;
+
+}
+
+.hero p {
+
+    margin-top:20px;
+    font-weight: 100;
+}
+
+
+.hero {
+    background-image: url('http://jethrotull.com/jtnew/wp-content/uploads/2016/12/home-panel-11-1-1.jpg');
+    background-size: cover;
+    min-height: 200px;
+    border-radius: 4px;
+    color: white;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .navbar {
+    color: white;
+    background-color: #cb202d;
+}
+
+#app .navbar a {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+#app .login {
+    background-image: url('https://anandipaliwal.files.wordpress.com/2015/06/food-table-relisted.jpg');
+    background-size: cover;
+    border-radius: 4px;
+    height: 100px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#app .login-form {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 1rem;
+    padding-top: 0;
+    border-radius: 4px;
+}
+
+
+.hero {
+    margin-bottom: 2rem;
+}
+
+.restaurant {
+    background:url("http://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg") ;
+    background-color: white;
+    position: relative;
+    width: 530px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 4px;
+}
+
+.rest-wrapper {
+    display: flex;
+    font-family: sans-serif;
+}
+
+.rest-wrapper .image {
+    margin-right: 1rem;
+}
+
+.rest-wrapper .image img {
+    border-radius: 4px;
+}
+
+.rest-wrapper .rest-name {
+    font-size: 24px;
+    color: #cb202d;
+}
+
+.rest-wrapper .rest-category {
+    color: #89959B;
+    text-transform: uppercase;
+}
+
+.rest-wrapper .rest-address {
+    color: #89959B;
+}
+
+.rest-extra {
+    display: flex;
+    margin-top: 1rem;
+    border-top: 1px solid #e7e7e7;
+    padding: 1rem;
+}
+
+.rest-extra .type {
+    text-transform: uppercase;
+     color: #89959B;
+     flex: none;
+     margin-right: 2rem;
+}
+
+.restaurant .rating {
+    color: white;
+    background-color: #5BA829;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem 1rem;
+    font-size: 18px;
+    border-radius: 4px;
+    letter-spacing: 2px;
+}
+
+
+.search-bar {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+    margin-top: 25px;
+}
+
+.search-bar form {
+    display: flex;
+    align-items: center;
+}
+
+.search-bar form .input-wrapper {
+   flex: 1;
+   margin-right: 1rem;
+}
+
+.ui{
+
+    width:100%;
+    padding:0;
+
+}
+
+.zo_logo{
+
+    display:block;
+    height:120px;
+    width:120px;
+}
+
+.red{
+        background: #cb202d;
+    color: #fff;
+    font-weight: 400;
+    text-align: center;
+    border: none;
+    border-radius: 4px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.bestDish .button {
+    display: inline-block;
+    background-color:#cb202d;
+    color: white;
+    padding: 0.4rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#getIngredients-button{
+
+      /*  position: absolute;
+    margin-left: 172px;
+    margin-top: -27px*/
+}
+
+#getIngredients-button2{
+
+ /*       position: absolute;
+        margin-left: 296px;
+        /*margin-top: -27px;*/*/
+}
+
+.list-buttons{
+
+    list-style: none;
+    margin-left: 73px;
+}
+
+.vegnonveg{
+
+        width: 72px;
+        height: 61px;
+        position: absolute;
+        left: 255px;
+        top: 383px;
+}
+
+.to-do-list{
+    position: absolute;
+        right: -213px;
+        top: 13px;
+}

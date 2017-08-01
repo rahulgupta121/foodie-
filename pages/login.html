@@ -1,0 +1,29 @@
+<div class="login" ng-controller="loginController">
+ <div class="login-form">
+            <h3> Login </h3>
+            <form name="loginForm">
+                <div class="form-group">
+                    <label for="user-email">Email address</label>
+                    <input type="email" class="form-control" id="user-email" placeholder="Email" name="email" ng-model="user.email" required="">
+                    <div ng-show="loginForm.email.$error.required">Required!</div>
+                    <div ng-show="loginForm.email.$error.email">This doesn't look like a valid email</div>
+                </div>
+                <div class="form-group">
+                    <label for="user-password">Password</label>
+                    <input type="password" class="form-control" id="user-password" placeholder="Password" name="password" required="" ng-model="user.password" ng-minlength="6" ng-maxlength="15">
+                    <div ng-show="loginForm.password.$error.minlength">
+                    Password must be at least 6 characters long
+                    </div>
+                    <div ng-show="loginForm.password.$error.maxlength">
+                    Password must be at most 15 characters long
+                    </div>
+                    <div ng-show="loginForm.password.$error.required">
+                    Please enter your  password 
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-default" ng-disabled="loginForm.$invalid" ng-click="goToHome()">Login</button>
+            </form>
+            	<div class='welcome-message'>Welcome Back {{email}}</div>
+        </div>
+
+</div>
