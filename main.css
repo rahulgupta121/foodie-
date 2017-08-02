@@ -71,7 +71,7 @@ body {
 }
 
 .restaurant {
-    background:url("http://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg") ;
+    background:url("https://www.bergerpaints.com/colour-magazine/Upload/Posting/Image/colours-nature-banner-nov.jpg") ;
     background-color: white;
     position: relative;
     width: 530px;
@@ -80,6 +80,7 @@ body {
     margin-bottom: 2rem;
     padding: 2rem;
     border-radius: 4px;
+
 }
 
 .rest-wrapper {
@@ -118,7 +119,7 @@ body {
 
 .rest-extra .type {
     text-transform: uppercase;
-     color: #89959B;
+     color: red;
      flex: none;
      margin-right: 2rem;
 }
@@ -162,7 +163,7 @@ body {
 }
 
 .zo_logo{
-
+    font: red;
     display:block;
     height:120px;
     width:120px;

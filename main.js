@@ -23,7 +23,7 @@ foodieApp.controller('mainController',function($scope) {
 		category: 'Casual Dining, Bar',
 		vote: '4.2',
 		cuisines: 'Modern Indian',
-		cost: '2200',
+		cost: '200',
 		hours: '12 Noon to 1 AM (Mon-Sun)',
 		image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg',
 		id:'1',
@@ -48,10 +48,24 @@ foodieApp.controller('mainController',function($scope) {
 	address: '38/39, Level 1, Block E , Inner Circle, Connaught Place',
 	location: 'Connaught Place',
 	category: 'Casual Dining, Bar',
-	vote: '4.2',
+	vote: '4.0',
 	cuisines: 'Modern Indian',
-	cost: '2200',
+	cost: '2300',
 	hours: '12 Noon to 1 AM (Mon-Sun)',
+
+	image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
+},
+
+	{
+	name: 'A1 Punjabi Food Dhaba ',
+	address: '38/39, Level 1, Block E , Inner Circle, Connaught Place',
+	location: 'Connaught Place',
+	category: 'Casual Dining, Bar',
+	vote: '4.1',
+	cuisines: 'Modern Indian',
+	cost: '900',
+	hours: '12 Noon to 1 AM (Mon-Sun)',
+
 	image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg'
 }];
 })
@@ -75,7 +89,7 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		category: 'Casual Dining, Bar',
 		vote: '4.2',
 		cuisines: 'Modern Indian',
-		cost: '2200',
+		cost: '200',
 		hours: '12 Noon to 1 AM (Mon-Sun)',
 		image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg',
 		id:'1',
@@ -99,22 +113,39 @@ foodieApp.controller('restaurantController',function($scope,$routeParams,$http) 
 		bestDish: {
 			name: 'Spinach Dimsums',
 			image: 'http://finedininglovers.cdn.crosscast-system.com/BlogPost/l_3377_StockFood-00193424cut.jpg'
-		}},
+		}
+	},
 
 		{
 			name: 'saffon',
 			address: '38/39, Level 1, Block A, Connaught Place',
 			location: 'Connaught Place',
 			category: 'Fine Dining, Bar',
-			vote: '4.8',
+			vote: '4.0',
 			cuisines: 'Modern Indian, Italian',
-			cost: '1200',
+			cost: '900',
 			hours: '11 Noon to 1 AM (Mon-Sun)',
 			image: 'download.jpg',
-			id: '2',
+
 			bestDish: {
 				name: 'Spinach Dimsums',
 				image: 'http://finedininglovers.cdn.crosscast-system.com/BlogPost/l_3377_StockFood-00193424cut.jpg'
+			}
+		},
+		{
+			name: 'Farzi Cafe',
+			address: '38/39, Level 1, Block E , Inner Circle, Connaught Place',
+			location: 'Connaught Place',
+			category: 'Casual Dining, Bar',
+			vote: '4.1',
+			cuisines: 'Modern Indian',
+			cost: '2200',
+			hours: '12 Noon to 1 AM (Mon-Sun)',
+			image: 'https://b.zmtcdn.com/data/pictures/chains/2/308022/dabd30bd0b000ea859ada9a08a0132fc.jpg',
+
+			bestDish: {
+				name: 'Corn Pizza',
+				image: 'http://www.hindimeaning.com/pictures/fruits/banana.jpg?x47669'
 			}
 
 
